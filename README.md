@@ -21,13 +21,23 @@ The submarine is a 3D model I built in Blender. You can control its movement usi
 
 ## Skills demonstrated
 
-### shaders
+### shaders and lighting
 
-The shader used in this scene employs the 'Phong Lighting' model (more about it here: [https://en.wikipedia.org/wiki/Phong_reflection_model](https://en.wikipedia.org/wiki/Phong_reflection_model))
+![submarine spotlight](./mdImages/subspotlight.png)
+
+The shader used in this scene employs the 'Phong Lighting' model (more about it here: [https://en.wikipedia.org/wiki/Phong_reflection_model](https://en.wikipedia.org/wiki/Phong_reflection_model)) and also maps textures onto models. The type of lighting used is spot illumination (submarine spotlight) and positional illumination (jellyfish glow). The fragment shader file is `shaders/texturedphong.frag`.
 
 ### shadows
 
+![submarine spotlight](./mdImages/shadows.png)
+
+Shadows have been successfully implemented in this scene using a shadow map. The shadowmap is applied using the same fragment shader for lighting and textures.
+
 ### procedurally generated terrain
+
+![terrain](./mdImages/terrain.png)
+
+Perlin noise is generally used to create naturally looking landscapes in games or other graphical programs. The algorithm was used to generate the heightmap of the underwater terrain. This heightmap was then applied onto a flat mesh to create the terrain itself. The Perlin noise implementation found in this project was derived from: [https://rtouti.github.io/graphics/perlin-noise-algorithm](https://rtouti.github.io/graphics/perlin-noise-algorithm)
 
 ### writing an OBJ parser
 
