@@ -23,6 +23,8 @@ The submarine is a 3D model I built in Blender. You can control its movement usi
 
 ### shaders
 
+The shader used in this scene employs the 'Phong Lighting' model (more about it here: [https://en.wikipedia.org/wiki/Phong_reflection_model](https://en.wikipedia.org/wiki/Phong_reflection_model))
+
 ### shadows
 
 ### procedurally generated terrain
